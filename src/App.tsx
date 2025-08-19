@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="spa-layout-container">
         {/* Navigation */}
-        <div style={{ marginBottom: "16px", width: "100%"}}>
+        <div style={{  width: "100%", display: "flex", height: "60px",backgroundColor:"#0e1121", paddingLeft: "20px", alignItems: "center"}}>
           <button onClick={() => setPage("home")}>Home</button>
           <button onClick={() => setPage("settings")}>Settings</button>
         </div>
