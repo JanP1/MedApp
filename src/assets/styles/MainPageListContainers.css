@@ -1,0 +1,15 @@
+.container-main-grid {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.grid-top {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.grid-label {
+  font-size: 20px;
+  font-weight: bold;
+}
