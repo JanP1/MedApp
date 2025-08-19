@@ -44,6 +44,8 @@
 
 .current-date-container {
   height: 250px;
+  overflow: hidden;
+  position: relative;
 }
 
 .date-label {
@@ -51,7 +53,19 @@
   font-weight: bold;
   font-size: 50px;
   color: lightblue;
+  user-select: none;
 }
+
+.calendar {
+  width: 150px;
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  transform: rotate(15deg);
+  opacity: 0.2;
+
+}
+
 
 .doctor-label {
   border-radius: 15px;
