@@ -3,24 +3,27 @@ body{
   width: 100%;
   overflow: hidden;
   margin: 0;
-  background-color: #202422;
+  background-color: #205a8a;
   font-family: Arial, Helvetica, sans-serif;
+  color: lightblue;
 }
 
 /* The main background of the SPA */
 .spa-layout-container {
   position: relative;
-  margin: 10px;
+  margin: 15px;
   width: calc(100% - 20px);  /* Subtract margins */
   height: calc(100vh - 20px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* background-color: #202422; */
   overflow: hidden;
 }
 
 button {
-  background-color: #4f46e5; /* modern indigo */
+  height: 35px;
+  background-color: #048a4b; /* modern indigo */
   color: white;
   border: none;
   padding: 10px 18px;
@@ -35,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #4338ca; /* darker on hover */
+  background-color: #0eb064; /* darker on hover */
 }
 
 button:active {
@@ -47,4 +50,13 @@ button:disabled {
   background-color: #a5b4fc; /* lighter indigo */
   cursor: not-allowed;
   box-shadow: none;
+}
+
+.page-container {
+  margin: 5px;
+  box-shadow: 0 0 2px lightblue;
+  padding: 16px;
+  border-radius: 8px; 
+  height: 100%;
+  overflow: hidden;
 }

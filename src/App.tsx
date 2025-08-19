@@ -1,4 +1,7 @@
 import "./App.css";
+import FormPage from "./components/FormPage";
+import MainPage from "./components/MainPage";
+import SettingsPage from "./components/SettingsPage";
 import { useUIStore } from "./stores/PageVisibilityStore";
 
 function App() {
@@ -7,23 +10,18 @@ function App() {
 
   return (
     <div className="spa-layout-container">
-      <div style={{ padding: "16px", width: "100%", display: "flex", flexDirection: "column"}}>
         {/* Navigation */}
         <div style={{ marginBottom: "16px", width: "100%"}}>
           <button onClick={() => setPage("home")}>Home</button>
           <button onClick={() => setPage("settings")}>Settings</button>
-          <button onClick={() => setPage("profile")}>Profile</button>
-          <button onClick={() => setPage("hidden")}>Hidden</button>
         </div>
 
         {/* Page content */}
-        <div style={{ border: "1px solid gray", padding: "16px", borderRadius: "8px", height: "100%" }}>
-          {currentPage === "home" && <h1>🏠 Home Page</h1>}
-          {currentPage === "settings" && <h1>⚙️ Settings Page</h1>}
-          {currentPage === "profile" && <h1>👤 Profile Page</h1>}
-          {currentPage === "hidden" && <h1>🙈 Hidden Page</h1>}
+        <div className="page-container">
+          {currentPage === "home" && <MainPage/>}
+          {currentPage === "settings" && <SettingsPage/>}
+          {currentPage === "form" && <FormPage/>}
         </div>
-      </div>
     </div>
   );
 }

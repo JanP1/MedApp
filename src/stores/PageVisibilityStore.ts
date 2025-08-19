@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type Page = "home" | "settings" | "profile" | "hidden";
+type Page = "home" | "settings" | "form" | "hidden";
 
 interface UIState {
   currentPage: Page;
