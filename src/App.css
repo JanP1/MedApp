@@ -1,0 +1,50 @@
+body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #202422;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The main background of the SPA */
+.spa-layout-container {
+  position: relative;
+  margin: 10px;
+  width: calc(100% - 20px);  /* Subtract margins */
+  height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  /* background-color: #202422; */
+  overflow: hidden;
+}
+
+button {
+  background-color: #4f46e5; /* modern indigo */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #4338ca; /* darker on hover */
+}
+
+button:active {
+  transform: scale(0.96);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #a5b4fc; /* lighter indigo */
+  cursor: not-allowed;
+  box-shadow: none;
+}
