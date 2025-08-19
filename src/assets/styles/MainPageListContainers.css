@@ -1,15 +1,51 @@
 .container-main-grid {
   display: grid;
   grid-template-rows: 50px 1fr;
+  overflow: hidden;
 }
 
 .grid-top {
-  display: flex;
+  display: grid;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  grid-template-columns: 1fr 120px;
   align-items: center;
   padding-left: 20px;
+  box-shadow: 2px 0px 5px 5px rgba(0, 0, 0, 0.9);
 }
 
 .grid-label {
   font-size: 20px;
   font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.date-nav-buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.date-nav-button {
+  width: 20px;
+  height: 20px;
+  transition: all ease 0.2s;
+  
+}
+
+
+.date-nav-button:hover {
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+
+.date-nav-button:active {
+  cursor: pointer;
+  transform: translateY(10%);
 }

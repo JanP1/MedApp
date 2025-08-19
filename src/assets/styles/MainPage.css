@@ -52,6 +52,7 @@
   font-size: 50px;
   color: lightblue;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .calendar {
