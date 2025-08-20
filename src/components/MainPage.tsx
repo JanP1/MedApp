@@ -3,6 +3,7 @@ import "../assets/styles/MainPageListContainers.css"
 import doctorImg from "../assets/doctor.png"
 
 export default function MainPage() {
+  const currentDate = "12.02.2025";
   return (
     <div className="main-page-grid">
       <div className="grid-col-1">
@@ -32,6 +33,9 @@ export default function MainPage() {
           <div className="grid-top">
             <div className="grid-label">
               Meetings
+            </div>
+            <div>
+            {currentDate}
             </div>
             <div className="date-nav-buttons">
               <div className="date-nav-button">

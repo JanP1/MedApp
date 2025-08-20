@@ -4,6 +4,7 @@
   /* background-color: yellow; */
   display: grid;
   grid-template-columns: 410px 410px 410px;
+  overflow: auto;
 }
 
 .grid-col-1 {
@@ -44,6 +45,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all ease 0.2s;
+}
+
+.current-date-container:hover {
+  background-color: #1a224d;
+  cursor: pointer;
 }
 
 .date-label {
